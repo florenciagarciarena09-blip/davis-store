@@ -1,0 +1,123 @@
+/* --------------------------- Colores de la marca -------------------------- */
+:root {
+    --azul: #2d50a0;
+    --naranja: #f7931e;
+    --crema: #fff6ea;
+}
+
+/* ------------------------------ Scroll suave ------------------------------ */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+    /* para que el menú fijo no tape los títulos */
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Navbar                                   */
+/* -------------------------------------------------------------------------- */
+.navbar-brand img {
+    height: 50px;
+}
+
+.navbar .nav-link {
+    color: var(--azul);
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: var(--naranja);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Carrusel                                  */
+/* -------------------------------------------------------------------------- */
+.carousel-item img {
+    height: 70vh;
+    min-height: 320px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(45, 80, 160, 0.8);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    bottom: 3rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Secciones                                 */
+/* -------------------------------------------------------------------------- */
+.seccion {
+    padding: 4rem 0;
+}
+
+.seccion-productos {
+    background-color: var(--crema);
+}
+
+.titulo-seccion {
+    color: var(--azul);
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+/* -------------------------------- Tarjetas -------------------------------- */
+.card-img-top {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.card-title {
+    color: var(--azul);
+    font-weight: 700;
+}
+
+.btn-naranja {
+    background-color: var(--naranja);
+    border-color: var(--naranja);
+    color: #212529;
+    font-weight: 600;
+}
+
+.btn-naranja:hover {
+    background-color: #d97d0c;
+    border-color: #d97d0c;
+    color: #fff;
+}
+
+/* --------------------------------- Footer --------------------------------- */
+footer {
+    background-color: var(--azul);
+    color: #fff;
+}
+
+footer img {
+    height: 70px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--naranja);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    Fondo                                   */
+/* -------------------------------------------------------------------------- */
+:root {
+    --bg-opacidad: 0.08;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: url("../img/bg.jpg");
+    background-repeat: repeat;
+    background-size: 750px auto;
+    opacity: var(--bg-opacidad);
+}
